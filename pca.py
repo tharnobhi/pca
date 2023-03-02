@@ -22,3 +22,4 @@ print("Explained variance ratio:", pca.explained_variance_ratio_)
 data_pca = pd.DataFrame(X_pca, columns=["pc_" + str(i) for i in range(10)])
 data_pca["label"] = y
 data_pca.to_csv("mfcc_data_pca.csv", index=False)
+
